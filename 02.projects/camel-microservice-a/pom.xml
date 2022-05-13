@@ -28,6 +28,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+		<!-- camel -->
 		<dependency>
 			<groupId>org.apache.camel.springboot</groupId>
 			<artifactId>camel-spring-boot-starter</artifactId>
@@ -69,7 +71,7 @@
 			<artifactId>camel-csv-starter</artifactId>
 			<version>${camel.version}</version>
 		</dependency>
-
+		<!-- end camel -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -82,7 +84,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.in28minutes.microservices</groupId>
+            <artifactId>camel-microservice-b</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
